@@ -1,0 +1,139 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  height: 95vh;
+  cursor: url("../assets/lightsaber.png"), auto;
+  background-color: #fdfdfd;
+  text-align: center;
+}
+
+.background-img {
+  background-image: url('../assets/Screenshot\ 2022-02-25\ 083158.jpg');
+  /* background-repeat: no-repeat; */
+  width: 1800;
+  z-index: -1;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+html {
+  font-size: 62.5%;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+main {
+  width: 100%;
+  height: 56vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-top: 210px ; */
+}
+
+main section {
+  width: 50%;
+  height: 56vh;
+  /* border: 2px solid gold; */
+  border-radius: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 2.4%;
+  background-color: white;
+}
+
+main img {
+  width: 15%;
+  border-bottom: 0.5px solid rgb(226, 225, 225);
+  
+
+
+}
+
+main img:hover {
+  transform: scale(1.3);
+}
+
+
+
+
+
+#light {
+  width: 3%;
+  border-radius: 50px;
+  padding: 8px 5px;
+  background: linear-gradient(to left,#ffffff 20%, #d8d6d6);
+  position: relative;
+  box-shadow: 0 5px 0 #9e9e9e;
+  position: relative;
+  bottom: 170px;
+  right: 900px;
+  border: none;
+}
+
+#light:active {
+  box-shadow: 0 2px 0 #9e9e9e;
+  transform: translateY(3px);
+}
+
+#light img {
+  width: 70%;
+  position: relative;
+  top: 2px;
+}
+
+
+#additional-img {
+  margin-left: 4%;
+}
+
+#additional-img-2 {
+  margin-left: 0%;
+  margin-top: 4.2%;
+  width: 17%;
+} 
+
+#Heading {
+  color: #bebdbd;
+  font-size:4rem;
+  position: relative;
+  text-align: center;
+  padding: 70px 0 20px 0px;
+
+}
+
+.hidden {
+  display: none;
+}
